@@ -26,6 +26,5 @@ public class Actividad1_13 {
 
         System.out.println("Nota en el boletín " + boletin);
         System.out.println("NOta en el expediente " + expediente);
-
         }
     }
