@@ -16,8 +16,8 @@ public class Aplicacion3_13_fallo {
         System.out.println("Ingrese los segundos");
         segundos= sn.nextInt();
 
-        System.out.println("Ingrese la cantidad de segundos que desea sumarle a su hora");
-        tiempoAgragado= sn.nextInt();
+   //     System.out.println("Ingrese la cantidad de segundos que desea sumarle a su hora");
+  //      tiempoAgragado= sn.nextInt();
 
         System.out.println("hora antigua es-> "+horas+":"+minutos+":"+segundos);
 
@@ -25,17 +25,15 @@ public class Aplicacion3_13_fallo {
             if (horas==24){
                 horas=0;
             }
-            horas++;
+       //     horas++;
             for (minutos=minutos;60<=minutos;minutos++){
                 if (minutos==60){
                     minutos=0;
                 }
-                minutos++;
-                for (segundos=segundos;60<=segundos;segundos+=tiempoAgragado){
+         //       minutos++;
+                for (segundos=segundos;60<=segundos;segundos++){
                     if (segundos==60){
-                    }
-                    for (tiempoAgragado=tiempoAgragado;0<=tiempoAgragado;tiempoAgragado--){
-                        segundos++;
+                        segundos=0;
                     }
                 }
             }
