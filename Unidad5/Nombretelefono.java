@@ -34,6 +34,18 @@ public class Nombretelefono {
             mostrar("**** E N C O N T R A D O ****");
             mostrar(nombre[indiceNumero]+" Telefono: "+telefono[indiceNumero]);
         }
+
+        mostrar("Quieres cambiar algun numero telefonico? Dime de quien->");
+        String nombreBuscar2= sn.next();sn.nextLine();
+
+        indiceNumero=buscarTexto(nombre,nombreBuscar2);
+        if (indiceNumero< nombre.length){
+            mostrar("Indica el nuevo numero de telefono");
+            telefono[indiceNumero]=sn.nextInt();
+
+        }
+
+
     }
 
     public static void mostrar(String texto){
