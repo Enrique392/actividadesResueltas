@@ -1,7 +1,6 @@
 package Unidad5;
 import java.util.Arrays;
 
-import static java.lang.System.in;
 
 public class AmpliarArray {
     public static void main(String[] args) {
@@ -13,7 +12,7 @@ public class AmpliarArray {
         System.out.println(Arrays.toString(numeros));
         numeros=Arrays.copyOf(numeros,numeros.length+1);
         System.out.println("Array despues de crecer. longuitud"+numeros.length);
-        numeros[numeros.length]
+    //    numeros[numeros.length]
 
 
     }
