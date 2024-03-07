@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import static java.lang.System.in;
 
-public class InsertatOrdenadaFunciones2 {
+public class InsertatOrdenadaFunciones__MENU {
 
 
     /*Vamos a realizar la cesta de la compra..
