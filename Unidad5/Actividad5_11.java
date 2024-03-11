@@ -11,7 +11,7 @@ public class Actividad5_11 {
     static byte dif=1;
     static int numeroSecreto=(int) (Math.random()*9+1);;
     static int numeroJugador=0;
-    static int intentos=0;
+    static int intentos;
     static int[] mejores=new int[0];
     static int score;
 
@@ -74,6 +74,7 @@ public class Actividad5_11 {
 
         static void juego(){
         score=10000;
+        intentos=0;
             System.out.println("Para abrir la boveda debes adivinar la combinacion correcta");
             System.out.println("Ingrese su combinacion");
             numeroJugador=sn.nextInt();
@@ -112,7 +113,7 @@ public class Actividad5_11 {
             System.out.println("**Las mejores puntuaciones son las de abajo");
             Arrays.sort(mejores);
             for (int i = 0; i < mejores.length; i++) {
-                System.out.println("Nº "+i+" "+mejores[i]);
+                System.out.println("Nº "+i+1+" "+mejores[i]);
 
                 System.out.println("Quires vovler al menu\n1. Si\n2. No");
                 byte continuar= sn.nextByte();
