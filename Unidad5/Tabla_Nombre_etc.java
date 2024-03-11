@@ -60,7 +60,7 @@ public class Tabla_Nombre_etc {
     public static void mostrarAlumnos(String[][]alumnos){
 
         Arrays.sort(alumnos, Comparator.comparing(a -> a[0]));
-        System.out.println("|Nombre |Apellido |Profesion |Email|");
+        System.out.println("\n|Nombre |Apellido |Profesion |Email|");
         for (String fila[]:alumnos){
             for (String col:fila){
                 System.out.print(col+"\t");
