@@ -98,6 +98,7 @@ public class Actividad5_11 {
 
             mejores=Arrays.copyOf(mejores,mejores.length+1);
             mejores[mejores.length-1]=score;
+            System.out.println(Arrays.toString(mejores));
 
             System.out.println("Quieres jugar otra vez\n1. Si\n2. No");
             byte continuar= sn.nextByte();
@@ -112,17 +113,16 @@ public class Actividad5_11 {
             System.out.println("**Mejores puntuaciones**");
             System.out.println("**Las mejores puntuaciones son las de abajo");
             Arrays.sort(mejores);
+            System.out.println(mejores.length);
             for (int i = 0; i < mejores.length; i++) {
-                System.out.println("Nº "+i+1+" "+mejores[i]);
-
-                System.out.println("Quires vovler al menu\n1. Si\n2. No");
-                byte continuar= sn.nextByte();
-
-                if (continuar==1){
-                    menu();
-                }else System.out.println("Gracias por jugar con nosotros, no olvides en apoyarnos, vuelve pronto");
-
+                System.out.println("Nº "+(i+1)+" "+mejores[i]);
             }
+            System.out.println("Quires vovler al menu\n1. Si\n2. No");
+            byte continuar= sn.nextByte();
+
+            if (continuar==1){
+                menu();
+            }else System.out.println("Gracias por jugar con nosotros, no olvides en apoyarnos, vuelve pronto");
 
         }
 
