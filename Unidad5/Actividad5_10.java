@@ -11,7 +11,7 @@ public class Actividad5_10 {
     static Scanner sn = new Scanner(in);
     static int can,max,per;
     static String []nombre=new String[0];
-static int[] errores=new int[0];
+    static int[] errores=new int[0];
     public static void main(String[] args) {
 datos();
 eliminar(errores,nombre,max);
